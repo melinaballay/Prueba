@@ -1,13 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Task = /** @class */ (function () {
-    function Task(description, completed) {
-        this.description = description;
-        this.completed = completed;
+var TextoACifrar = /** @class */ (function () {
+    function TextoACifrar(text) {
+        this.text = text;
     }
-    Task.prototype.markAsCompleted = function () {
-        this.completed = true;
+    TextoACifrar.prototype.textoDecifrado = function () {
+        // Lógica de descifrado aquí
+        // Este ejemplo simplemente invierte los caracteres
+        return this.text.split('').reverse().join('');
     };
-    return Task;
+    return TextoACifrar;
 }());
-exports.default = Task;
+exports.default = TextoACifrar;
